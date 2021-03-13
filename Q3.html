@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8">
+<title>FINALEXAM</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.rotate{
+           height: 100px;
+            width:100px;
+             background-color: red;
+           justify-content: center;
+          position: center;
+          margin: auto;
+          margin-top: 60px;
+       }
+/*this happens when we hover over div it will rotate 3 times and halway it will become 150px*150px */
+       .rotate:hover {
+           animation: rotate 2s 3;
+            animation-delay: 1s;
+       }
+       /* this is animation */
+       @keyframes rotate {
+        0%{transform:rotate(0deg);}
+           50%{transform:rotate(180deg);
+           height: 150px; 
+           background-color: green;
+           width: 150px;}
+           100%{transform:rotate(360deg);
+               background-color: orange}
+       }
+</style>
+<body>
+       
+   <div style="height:300px; width: 400px; border: 1px solid black; margin: auto; " >
+
+       <div class="rotate"></div>
+
+    
+</div>
+</body>
+</html>
